@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "*",
+    origin: "https://chattinga.netlify.app",
     methods: ["GET", "POST"]
   }
 });
